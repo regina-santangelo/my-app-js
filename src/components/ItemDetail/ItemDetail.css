@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+.detalle{
+    background-color: rgba(0, 0, 0, 0.581);
+    height: 650px;
+    width: 600px;
+    margin-left: 32.2%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+.imagen{
+    height: 300px;
+    width: 570px;
+}
+
+.descripcion{
+    font-size: 23px;
+    color: aliceblue;
+}
+
+.stock{
+    font-size: 21px;
+    color: antiquewhite;
+}
+
+.precio{
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.tituloDetalle{
+    font-size: 26px;
+    color: aliceblue;
+}
