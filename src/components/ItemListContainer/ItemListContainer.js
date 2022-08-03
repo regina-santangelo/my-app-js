@@ -1,30 +1,36 @@
 import { useState, useEffect } from "react"
-import { getProducts } from "../../asyncMock"
+import { getProducts, getProductsByCategory } from "../../asyncMock"
+import ItemList from "../ItemList/ItemList"
 import './ItemListContainer.css'
+import { useParams } from "react-router-dom"
 
-const ItemListContainer = (props)=>{
+const ItemListContainer = ({greeting})=>{
     const [products, setProducts]= useState([])
     const [loading , setLoading] = useState(true)
 
-    useEffect(()=>{
-        getProducts().then(response =>{
+    const { categoryId } = useParams()
+
+    useEffect(() => {
+        const categoria = categoryId ? getProductsByCategory : getProducts
+        
+        categoria(categoryId).then(response => {
             setProducts(response)
-        }).catch(error =>{
-            console.log('error')
-        }).finally(()=>{
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
             setLoading(false)
         })
-    }, [])
+    }, [categoryId])
 
-    const productosTransformados = products.map(product=>(
-    <li className="listaProductos" key={product.id}>
-        <h3>{product.name}</h3> 
-        <img src={product.img}></img>
-        <p>Stock: {product.stock}</p>
-        <button className="botonProducto">Ver detalles</button>
-        <p>${product.price}</p>
-    </li>
-    ))
+    // useEffect(()=>{
+    //     getProducts().then(response =>{
+    //         setProducts(response)
+    //     }).catch(error =>{
+    //         console.log('error')
+    //     }).finally(()=>{
+    //         setLoading(false)
+    //     })
+    // }, [])
 
     if(loading){
         return <h2>Espera mientras cargamos los productos...</h2>
@@ -32,9 +38,9 @@ const ItemListContainer = (props)=>{
         
     return(
         <>
-            <h2>{props.greeting}</h2>
+            {/* <h2>{greeting}</h2> */}
             <div>
-                {productosTransformados}
+                <ItemList products={products}/>
             </div>
         </>
     )

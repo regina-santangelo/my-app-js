@@ -1,13 +1,13 @@
 import './ItemDetail.css'
 
-const ItemDetail =({product})=>{
+const ItemDetail = ({ id, name, category, img, price, stock, description}) => {
     return(
-    <div className="detalle" key={product.id}>
-        <h3 className='tituloDetalle'>{product.name}</h3> 
-        <img className='imagen' src={product.img}></img>
-        <p className='descripcion'>{product.description}</p>
-        <p className='stock'>Stock: {product.stock}</p>
-        <p className='precio'>${product.price}</p>
+    <div className="detalle">
+        <h3 className='tituloDetalle'>{name}</h3> 
+        <img className='imagen' src={img}></img>
+        <p className='descripcion'>{description}</p>
+        <p className='stock'>Stock: {stock}</p>
+        <p className='precio'>${price}</p>
     </div>
     )
 }
