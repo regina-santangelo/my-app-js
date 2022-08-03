@@ -1,4 +1,9 @@
 My-App-JS
+
+![video-to-gif-converter](https://user-images.githubusercontent.com/102269047/182561062-92c43081-061e-46be-8d7a-74b62d9ec691.gif)
+
+
+
 Este proyecto consiste en un e-commerce creado con React Js. Es mi primer proyecto realizado con React y tambien el proyecto del último curso de Front-End de CoderHouse.
 Consiste en una simulación de negocio de instrumentos musicales. El mismo cuenta hasta la fecha con un catálogo, un carrito de compras, los detalles de los ítems y filtrado.
 
