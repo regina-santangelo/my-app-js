@@ -5,6 +5,8 @@ Consiste en una simulación de negocio de instrumentos musicales. El mismo cuent
 Dispone de varias carpetas dentro de src/components donde alojé cada sección de la página mencionadas anteriormente.
 
 PARA EJECUTAR EL CÓDIGO...
+Primero cabe aclarar que dispones de todo el código en la branch master! Así que dicho ésto, seguimos...
+
 Recomiendo utilizar un editor de texto (en mi caso usé VisualStudioCode, pero podés usar el de tu preferencia c:) y tener instalado Node.js. Luego abrir una terminal y ejecutar el comando 'npx install react' (librería que hace toda ésta app posible) y posterior ejecutar 'npx create-react-app 'name''.
 
 A continuación para poder visualizar en el servidor la app de react, en la terminal ponemos 'cd 'name'' y 'npm start'.
