@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './Counter.css'
 
-const Counter = ({stock = 0, initial = 1, onAdd, setShow, show})=>{
+const Counter = ({stock = 0, initial = 1, onAdd})=>{
     const [quantity, setQuantity] = useState(initial)
 
     const decrement = ()=>{

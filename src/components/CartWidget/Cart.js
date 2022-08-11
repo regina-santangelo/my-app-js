@@ -1,11 +1,18 @@
-const Cart = ()=>{
-    return(
-        <div className="Cart">
-            <img src="images/carrito.png"></img>
-            <p>10</p>
-        </div>
-        
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import CartContext from '../../context/CartContext'
+import './Cart.css'
 
+const Cart = () =>{
+    const {getQuantity} = useContext(CartContext)
+
+    const quantity = getQuantity()
+
+    return(
+        <Link to='/cart' className='cartDetails'>
+            <img src="/images/carrito.png" className='cart'/>
+            <p className='cartNumber'>{quantity}</p>
+        </Link>
     )
 }
 

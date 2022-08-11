@@ -4,7 +4,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 
-const ItemDetailContainer = ()=> {
+const ItemDetailContainer = ({ addItem })=> {
 
     const [products, setProducts]= useState({})
 
@@ -18,7 +18,7 @@ const ItemDetailContainer = ()=> {
     
     return(
         <div>
-            <ItemDetail {...products}/>
+            <ItemDetail {...products} addItem = {addItem}/>
         </div>
        
     )

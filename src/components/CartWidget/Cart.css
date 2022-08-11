@@ -1,0 +1,9 @@
+.cartDetails{
+    display: flex;
+    height:23px;
+}
+
+p{
+    text-decoration:none;
+    color: aliceblue;
+}
