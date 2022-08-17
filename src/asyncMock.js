@@ -6,15 +6,15 @@ const products = [
         category: 'cuerdas',
         stock:15,
         description:'Guitarra acústica. Marca: Parquer. Incluye funda y cuerdas de repuesto.',
-        img:"images/guitarra-acustica-1.jpg"
+        img:"/images/guitarra-acustica-1.jpg"
     },{
         id: '2',
-        name: 'Piano Yamaha 5 Octavas',
+        name: 'Piano',
         price:23000,
         category: 'pianos',
         stock:19,
         description:'Piano eléctrico 5 octavas. Marca: Yamaha. Incluye cable input, soporte de partituras y transformador.',
-        img:"images/piano-electrico.jpg"
+        img:"/images/piano-electrico.jpg"
     },{
         id: '3',
         name: 'Violín',
@@ -22,7 +22,7 @@ const products = [
         category: 'cuerdas',
         stock:25,
         description:'Violin soprano. Incluye funda, arco y resina. ',
-        img:"images/violin.jpg"
+        img:"/images/violin.jpg"
     }
 ]
 

@@ -2,9 +2,10 @@
     list-style: none;
     height: 580px;
     width: 620px;
-    margin: 80px;
-    background-color: rgba(240, 248, 255, 0.532);
+    margin: 50px;
+    background-color: rgba(89, 27, 57, 0.535) !important;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .listaProductos img{
@@ -18,4 +19,5 @@
     background-color: rgb(48, 48, 48);
     border-radius: 20px;
     color: aliceblue;
+    
 }
