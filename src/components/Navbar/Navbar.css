@@ -1,18 +1,10 @@
 nav{
     display: flex;
-    background-color: rgb(0, 2, 2);
+    background-color:rgba(89, 27, 57, 0.535);
     width: 100%;
     position: fixed;
     top: 0;
-    text-shadow: 0 0 5px rgb(255, 0, 76),
-    0 0 10px rgb(255, 0, 136),
-    0 0 20px rgb(208, 0, 255),
-    0 0 40px rgb(127, 38, 120),
-    0 0 80px rgb(127, 38, 74),
-    0 0 90px rgb(127, 38, 38),
-    0 0 100px rgb(127, 38, 45),
-    0 0 140px rgb(127, 38, 38),
-    0 0 180px rgb(127, 38, 38);;
+
 }
 
 .navbar{
@@ -20,7 +12,7 @@ nav{
     text-align: center;
     width: 20%;
     border-style: none none solid;
-    border-color: black;
+    border-color: rgba(89, 27, 57, 0.034);
 }
 
 .navbar:hover{
@@ -48,7 +40,7 @@ h2{
     width: 35%;
     padding-top: 30px;
     border-style: none none solid;
-    border-color: black;
+    border-color: rgba(89, 27, 57, 0.034);
 }
 
 .Lista:hover{
